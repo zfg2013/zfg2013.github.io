@@ -269,6 +269,7 @@
             margin-bottom: 25px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
+            border-left: 4px solid #667eea;
         }
 
         .publication-item:hover {
@@ -278,9 +279,10 @@
 
         .publication-title {
             color: #2d3748;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 10px;
             font-weight: bold;
+            line-height: 1.4;
         }
 
         .publication-authors {
@@ -293,6 +295,31 @@
             color: #4a5568;
             font-weight: 500;
             margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .publication-status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .status-published {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-review {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-manuscript {
+            background: #d1ecf1;
+            color: #0c5460;
         }
 
         .publication-links {
@@ -315,6 +342,38 @@
         .publication-link:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .publication-stats {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+
+        .stat-label {
+            color: #4a5568;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         /* Service Page */
@@ -583,45 +642,117 @@
             <!-- Awards & Honors Page -->
             <div id="awards" class="page">
                 <section class="section">
-                    <h2>Awards & Honors</h2>
+                    <h2>Honors, Awards, and Recognition (18)</h2>
                     
                     <div class="award-item">
-                        <div class="award-date">2024</div>
-                        <h3>[Award Name]</h3>
+                        <div class="award-date">October 2024</div>
+                        <h3>International Conference on Miniaturized Systems for Chemistry and Life Sciences (microTAS) Invited Lecture</h3>
                         <div class="award-description">
-                            [Description of the award, what it recognizes, and any significance. Include the awarding organization.]
+                            Invited to deliver a lecture at the prestigious microTAS conference, recognizing outstanding research contributions in miniaturized analytical systems.
                         </div>
                     </div>
 
                     <div class="award-item">
-                        <div class="award-date">2023</div>
-                        <h3>[Fellowship/Scholarship Name]</h3>
+                        <div class="award-date">September 2024</div>
+                        <h3>International Nanomedicine and Drug Delivery Symposium (nanoDDS) Travel Award</h3>
                         <div class="award-description">
-                            [Description of the fellowship or scholarship, including duration, amount if appropriate, and what it supported.]
+                            Travel award to present research at the International Nanomedicine and Drug Delivery Symposium, supporting participation in this leading conference.
                         </div>
                     </div>
 
                     <div class="award-item">
-                        <div class="award-date">2022</div>
-                        <h3>[Academic Honor]</h3>
+                        <div class="award-date">December 2023</div>
+                        <h3>UF's Health Cancer Center Predoctoral Award</h3>
                         <div class="award-description">
-                            [Description of academic honor, recognition criteria, and any special significance.]
+                            Prestigious predoctoral award from the University of Florida Health Cancer Center, recognizing excellence in cancer-related research.
                         </div>
                     </div>
 
                     <div class="award-item">
-                        <div class="award-date">2021</div>
-                        <h3>[Conference Award]</h3>
+                        <div class="award-date">September 2023</div>
+                        <h3>UF's College of Pharmacy Ronald J. Brenner and Sally G. Brenner Fellowship</h3>
                         <div class="award-description">
-                            [Description of conference award, presentation title, and conference name.]
+                            Named fellowship from the College of Pharmacy recognizing outstanding academic achievement and research potential.
                         </div>
                     </div>
 
                     <div class="award-item">
-                        <div class="award-date">2020</div>
-                        <h3>[Research Grant/Award]</h3>
+                        <div class="award-date">March 2023</div>
+                        <h3>UF's College of Pharmacy Graduate Superhero Award</h3>
                         <div class="award-description">
-                            [Description of research grant or award, funding agency, and research project supported.]
+                            Special recognition award from the College of Pharmacy celebrating exceptional graduate student achievements and contributions.
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-date">February 2023</div>
+                        <h3>UF's College of Pharmacy 36th Research Showcase Oral Finalist</h3>
+                        <div class="award-description">
+                            Selected as an oral presentation finalist at the College of Pharmacy's annual research showcase, competing among top graduate researchers.
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-date">October 2022</div>
+                        <h3>AAPS PharmSci360 Best Poster and Abstract</h3>
+                        <div class="award-description">
+                            Best poster and abstract award at the American Association of Pharmaceutical Scientists PharmSci360 conference.
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-date">October 2022</div>
+                        <h3>AAPS PharmSci360 Merck's Travelship Award</h3>
+                        <div class="award-description">
+                            Travel scholarship sponsored by Merck to attend the AAPS PharmSci360 conference and present research findings.
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-date">April 2022</div>
+                        <h3>Global Pharmaceutics Education Network Travelship</h3>
+                        <div class="award-description">
+                            International travel scholarship from the Global Pharmaceutics Education Network supporting conference participation and networking.
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-date">April 2022</div>
+                        <h3>Gordon Research Conference Invited Speaker Travelship</h3>
+                        <div class="award-description">
+                            Travel support to serve as an invited speaker at the Gordon Research Conference, recognizing research excellence and presentation skills.
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-date">April 2022</div>
+                        <h3>Carl Storm Gordon Research Conference Minority Fellowship</h3>
+                        <div class="award-description">
+                            Prestigious minority fellowship supporting participation in the Gordon Research Conference and promoting diversity in scientific research.
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-date">December 2021</div>
+                        <h3>NIH Diversity Supplement Training Award</h3>
+                        <div class="award-description">
+                            National Institutes of Health diversity supplement award supporting graduate training and research in biomedical sciences.
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-date">October 2021</div>
+                        <h3>AAPS PharmSci360 Best Poster and Abstract</h3>
+                        <div class="award-description">
+                            Second-time recipient of the best poster and abstract award at the AAPS PharmSci360 conference, demonstrating consistent research excellence.
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-date">October 2021</div>
+                        <h3>UF Graduate Student Council Research Travel Scholarship</h3>
+                        <div class="award-description">
+                            Travel scholarship from the University of Florida Graduate Student Council supporting conference participation and research dissemination.
                         </div>
                     </div>
                 </section>
@@ -632,68 +763,63 @@
                 <section class="section">
                     <h2>Publications & Patents</h2>
                     
-                    <h3 style="color: #667eea; margin-bottom: 20px; font-size: 1.5rem;">Journal Articles</h3>
+                    <!-- Publication Statistics -->
+                    <div class="publication-stats">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">13</span>
+                                <span class="stat-label">Published Papers</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Under Review</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">In Manuscript</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">21</span>
+                                <span class="stat-label">Total Publications</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Published Papers -->
+                    <h3 style="color: #667eea; margin-bottom: 20px; font-size: 1.5rem;">Published Papers (13)</h3>
                     
                     <div class="publication-item">
-                        <div class="publication-title">[Article Title]</div>
-                        <div class="publication-authors">[Your Name], [Co-author 1], [Co-author 2]</div>
-                        <div class="publication-venue">[Journal Name], Volume X, Issue Y, Pages Z-Z (Year)</div>
+                        <div class="publication-status status-published">Published</div>
+                        <div class="publication-title">Nanomaterial Isolated Extracellular Vesicles Enable High Precision Identification of Tumor Biomarkers for Pancreatic Cancer Liquid Biopsy</div>
+                        <div class="publication-authors">Z. F Greenberg, S. Ali, T. D. Schmittgen, S. Han, S. J. Hughes, K. S. Graim, M. He*</div>
+                        <div class="publication-venue">Journal of Nanobiotechnology (Springer Nature)</div>
                         <div class="publication-links">
-                            <a href="#" class="publication-link">PDF</a>
                             <a href="#" class="publication-link">DOI</a>
-                            <a href="#" class="publication-link">Cite</a>
+                            <a href="#" class="publication-link">PDF</a>
                         </div>
                     </div>
 
                     <div class="publication-item">
-                        <div class="publication-title">[Another Article Title]</div>
-                        <div class="publication-authors">[Co-author 1], [Your Name], [Co-author 2]</div>
-                        <div class="publication-venue">[Journal Name], Volume X, Issue Y, Pages Z-Z (Year)</div>
+                        <div class="publication-status status-published">Published</div>
+                        <div class="publication-title">Plasma Extracellular Vesicle-derived MicroRNA Associated with Human Alpha-1 Antitrypsin Deficiency-mediated Liver Disease</div>
+                        <div class="publication-authors">R. Oshins, Z. Huo, Z. Greenberg, V Clark, S Duarte, H Zhou, et al.</div>
+                        <div class="publication-venue">J Clin Transl Hepatol. Published online: Nov 19, 2024. doi: 10.14218/JCTH.2024.00253</div>
                         <div class="publication-links">
-                            <a href="#" class="publication-link">PDF</a>
                             <a href="#" class="publication-link">DOI</a>
-                            <a href="#" class="publication-link">Cite</a>
-                        </div>
-                    </div>
-
-                    <h3 style="color: #667eea; margin: 40px 0 20px 0; font-size: 1.5rem;">Conference Papers</h3>
-                    
-                    <div class="publication-item">
-                        <div class="publication-title">[Conference Paper Title]</div>
-                        <div class="publication-authors">[Your Name], [Co-author 1]</div>
-                        <div class="publication-venue">[Conference Name], [Location], [Year]</div>
-                        <div class="publication-links">
-                            <a href="#" class="publication-link">PDF</a>
-                            <a href="#" class="publication-link">Slides</a>
-                            <a href="#" class="publication-link">Video</a>
-                        </div>
-                    </div>
-
-                    <h3 style="color: #667eea; margin: 40px 0 20px 0; font-size: 1.5rem;">Patents</h3>
-                    
-                    <div class="publication-item">
-                        <div class="publication-title">[Patent Title]</div>
-                        <div class="publication-authors">[Your Name], [Co-inventor 1]</div>
-                        <div class="publication-venue">Patent No. [Patent Number], Filed: [Date], Published: [Date]</div>
-                        <div class="publication-links">
-                            <a href="#" class="publication-link">Patent Office</a>
                             <a href="#" class="publication-link">PDF</a>
                         </div>
                     </div>
 
-                    <h3 style="color: #667eea; margin: 40px 0 20px 0; font-size: 1.5rem;">Book Chapters</h3>
-                    
                     <div class="publication-item">
-                        <div class="publication-title">[Chapter Title]</div>
-                        <div class="publication-authors">[Your Name]</div>
-                        <div class="publication-venue">In: [Book Title], Editor: [Editor Name], [Publisher], [Year]</div>
+                        <div class="publication-status status-published">Published</div>
+                        <div class="publication-title">Diseased Tendon Models Demonstrate Influence of Extracellular Matrix Alterations on Extracellular Vesicle Profile</div>
+                        <div class="publication-authors">K.A. Shama, Z.F.Greenberg, C. Tammame, M. He, B.L. Taylor</div>
+                        <div class="publication-venue">Bioengineering (Basel). 2024 Oct 12;11(10):1019. doi: 10.3390/bioengineering11101019</div>
                         <div class="publication-links">
-                            <a href="#" class="publication-link">Publisher</a>
-                            <a href="#" class="publication-link">Amazon</a>
+                            <a href="#" class="publication-link">DOI</a>
+                            <a href="#" class="publication-link">PMID: 39451395</a>
                         </div>
                     </div>
-                </section>
-            </div>
 
             <!-- Service Page -->
             <div id="service" class="page">
