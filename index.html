@@ -735,7 +735,7 @@
         });
 
         // Add intersection observer for animations
-        const animatedElements = document.querySelectorAll('.info-card, .award-item, .publication-item, .service-item, .photo-item');
+        const animatedElements = document.querySelectorAll('.info-card, .award-item, .publication-item');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
