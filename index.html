@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dissertation Defense - AI-driven molecular engineering methods to advance extracellular vesicle precision medicine</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Navigation */
-        .nav-bar {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 50px;
-            padding: 15px 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             position: sticky;
             top: 20px;
             z-index: 100;
@@ -496,15 +462,15 @@
                             <h3><span class="icon">📍</span>Location</h3>
                             <p><strong>Venue:</strong> Cancer and Genetics Research Complex</p>
                             <p><strong>Room:</strong> Room 133</p>
-                            <p><strong>Address:</strong> 2033 Mowry Rd, Cancer and Genetics Research Complex, Gainesville, Florida 32610]</p>
-                            <p><strong>Virtual:</strong> Zoom link: ufl.zoom.us/my/zfgreenberg]</p>
+                            <p><strong>Address:</strong> 2033 Mowry Rd, Cancer and Genetics Research Complex, Gainesville, Florida 32610</p>
+                            <p><strong>Virtual:</strong> Zoom link: ufl.zoom.us/my/zfgreenberg</p>
                         </div>
                         <div class="info-card">
                             <h3><span class="icon">📚</span>Dissertation</h3>
                             <p><strong>Dissertation Major:</strong> AI-driven molecular engineering methods to advance extracellular vesicle precision medicine</p>
                             <p><strong>Dissertation Minor:</strong> Surveying bulk RNA-Seq with Enrichment Analysis in the Extracellular Vesicle Space</p>
-                            <p><strong>Major Field:</strong> Pharmaceutical Sciences]</p>
-                            <p><strong>Major Field:</strong> Computer & Informational Sciences & Software Engineering</p>
+                            <p><strong>Major Field:</strong> Pharmaceutical Sciences</p>
+                            <p><strong>Minor Field:</strong> Computer & Informational Sciences & Software Engineering</p>
                             <p><strong>Keywords:</strong> Extracellular vesicles, Computational Biology, Molecular Engineering and Design</p>
                         </div>
                     </div>
@@ -513,9 +479,9 @@
                 <section class="section">
                     <h2>Abstract</h2>
                     <div class="abstract">
-                        <p>[abstract: TBD]</p>
+                        <p>Abstract: TBD</p>
                         
-                        <p>[info: TBD]</p>
+                        <p>Info: TBD</p>
                     </div>
                 </section>
 
@@ -610,7 +576,7 @@
 
                     <div class="award-item">
                         <div class="award-date">December 2021</div>
-                        <h3>NIH  Supplement Training Award</h3>
+                        <h3>NIH Supplement Training Award</h3>
                         <div class="award-description">
                             National Institutes of Health Training award supporting graduate training and research in biomedical sciences.
                         </div>
@@ -636,12 +602,12 @@
                     <div class="publication-stats">
                         <div class="stats-grid">
                             <div class="stat-item">
-                                <span class="stat-number">21 </span>
+                                <span class="stat-number">21</span>
                                 <span class="stat-label">Total Publications</span>
                             </div>
                             
                             <div class="stat-item">
-                                <span class="stat-number">3 </span>
+                                <span class="stat-number">3</span>
                                 <span class="stat-label">Patent Disclosures</span>
                             </div>
                         </div>
@@ -681,13 +647,12 @@
                     </div>
                     
                     <div class="publication-item">
-                        <div class="publication-title">Toward artificial intelligence-enabled extracellular vesicle precision drug delivery </div>
-                        <div class="publication-authors">Z. F Greenberg,  K. S. Graim, M. He*</div>
+                        <div class="publication-title">Toward artificial intelligence-enabled extracellular vesicle precision drug delivery</div>
+                        <div class="publication-authors">Z. F Greenberg, K. S. Graim, M. He*</div>
                         <div class="publication-venue">Advanced Drug Delivery Reviews</div>
                         <div class="publication-links">
                             <a href="#" class="publication-link">DOI</a>
                             <a href="#" class="publication-link">PDF</a>
-                          </div>
                         </div>
                     </div>
                 </section>
@@ -696,7 +661,7 @@
 
         <footer class="contact-info">
             <p>For questions or more information, please contact:</p>
-            <p><strong>Zachary F. Greenberg/strong></p>
+            <p><strong>Zachary F. Greenberg</strong></p>
             <p>Email: <a href="mailto:zfg2013@ufl.edu">zfg2013@ufl.edu</a></p>
         </footer>
     </div>
@@ -770,9 +735,9 @@
 
         // Update URL when navigating (optional)
         const originalShowPage = showPage;
-        showPage = function(pageId) {
+        window.showPageWithHistory = function(pageId) {
             originalShowPage(pageId);
-            window.history.pushState({}, '', #${pageId});
+            window.history.pushState({}, '', `#${pageId}`);
         };
     </script>
 </body>
